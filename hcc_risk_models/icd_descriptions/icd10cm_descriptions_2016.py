@@ -17,7 +17,7 @@ class Icd10CmDefinitions:
             header=None,
             colspecs=[(0,5), (6,13), (14,15), (16,76), (77,500)],
             names=['order_number', 'code', 'is_valid', 'short_description',
-                   'long_description']
+                   'long_description'] , encoding='latin-1'
         )
 
         # set `code` as index
