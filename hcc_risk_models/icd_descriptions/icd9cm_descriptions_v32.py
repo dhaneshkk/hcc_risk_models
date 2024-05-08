@@ -19,7 +19,7 @@ class Icd9CmDefinitions:
             fname_short,
             header=None,
             colspecs=[(0,5), (6,500)],
-            names=['code', 'short_description']
+            names=['code', 'short_description'], encoding='latin-1'
         )
 
         # read long descriptions
@@ -27,7 +27,7 @@ class Icd9CmDefinitions:
             fname_long,
             header=None,
             colspecs=[(0,5), (6,500)],
-            names=['code', 'long_description']
+            names=['code', 'long_description'], encoding='latin-1'
         )
 
         df = pandas.merge(short_defs, long_defs, on='code')
